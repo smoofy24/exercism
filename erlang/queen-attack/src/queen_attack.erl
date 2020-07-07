@@ -10,6 +10,10 @@ can_attack(_WhiteQueen, _BlackQueen) ->
     {X1, Y1} = _WhiteQueen, 
     {X2, Y2} = _BlackQueen,
 
+    %%
+    %% Diagonality check
+    %% Two pieces are on the diagonal when difference between row numbers and column numbers is the same
+    %%
     D = abs(X2 - X1) - abs(Y2 - Y1), 
 
     if 
